@@ -3,3 +3,4 @@
 @media(max-width:700px){.app-shell{padding:18px 14px}.intro{padding-top:30px}.intro h1{font-size:42px}.stage-wrap{grid-template-columns:1fr}.stage{height:370px}.side-stats{display:grid;grid-template-columns:repeat(3,1fr);padding:7px 3px;gap:10px}.side-hint{display:none}.stat-block strong{font-size:19px}.game-card{padding:14px}.game-head h2 small{display:block;margin-top:3px}.tools-row{grid-template-columns:1fr}.game-controls{gap:10px}.control-note span{max-width:160px;line-height:1.5}.top-label{font-size:8px}.difficulty{gap:4px}}
 .lane.pressed{background:#ffffff12}.lane.pressed .lane-key{color:#fff}
 .lane.pressed{background:#ffffff12}
+.lane{touch-action:manipulation;cursor:pointer;user-select:none;-webkit-user-select:none}.lane:active{background:#ffffff14}
