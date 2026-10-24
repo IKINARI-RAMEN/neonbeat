@@ -6,3 +6,5 @@
 .lane{touch-action:manipulation;cursor:pointer;user-select:none;-webkit-user-select:none}.lane:active{background:#ffffff14}
 /* Disable browser zoom gestures so rapid play taps stay on the game. */
 html,body{touch-action:pan-x pan-y}
+/* The playfield owns all touch gestures; don't let taps on notes zoom the page. */
+.stage,.stage *{touch-action:none}
