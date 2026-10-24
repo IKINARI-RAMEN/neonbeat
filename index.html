@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEON BEAT — Browser Rhythm Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar"><a class="brand" href="#"><span class="brand-mark">✦</span> NEON<span>BEAT</span></a><div class="top-label">BROWSER RHYTHM GAME <i></i> v1.0</div></header>
+    <section class="intro"><div class="eyebrow">YOUR DESKTOP IS THE ARCADE</div><h1>Feel the beat.<br><span>Own the night.</span></h1><p>キーを押して、降ってくるノーツを叩こう。好きな曲を読み込んで遊べます。</p></section>
+    <section class="game-card">
+      <div class="game-head"><div><div class="eyebrow">NOW PLAYING</div><h2 id="songTitle">MIDNIGHT DRIVE <small>— NEONBEAT ORIGINAL</small></h2></div><div class="bpm-pill"><span class="pulse"></span><span id="bpmLabel">128 BPM</span></div></div>
+      <div class="stage-wrap">
+        <div class="stage" id="stage"><div class="stage-grid"></div><div class="lane-glow"></div><div class="judgement" id="judgement">READY?</div><div class="combo" id="combo">0<span>COMBO</span></div><div class="score" id="score">000000</div><div class="lanes" id="lanes">
+          <div class="lane" data-lane="0"><span class="lane-key">D</span></div><div class="lane" data-lane="1"><span class="lane-key">F</span></div><div class="lane" data-lane="2"><span class="lane-key">J</span></div><div class="lane" data-lane="3"><span class="lane-key">K</span></div>
+        </div><div class="hit-line"></div><div class="lane-labels"><span>D</span><span>F</span><span>J</span><span>K</span></div><div class="start-overlay" id="overlay"><div class="start-icon">▶</div><h3>READY TO PLAY?</h3><p>ENTERキー または PLAY を押してスタート</p></div></div>
+        <aside class="side-stats"><div class="stat-block"><span class="stat-label">ACCURACY</span><strong id="accuracy">—</strong><div class="meter"><i id="meterFill"></i></div></div><div class="stat-block"><span class="stat-label">MAX COMBO</span><strong id="maxCombo">0</strong></div><div class="stat-block"><span class="stat-label">BEST SCORE</span><strong id="bestScore">000000</strong></div><div class="side-hint"><span>⌨</span> D&nbsp; F&nbsp; J&nbsp; K<br>タイミングよく押そう</div></aside>
+      </div>
+      <div class="game-controls"><button class="play-button" id="playBtn"><span>▶</span> PLAY</button><div class="control-note"><b>HOW TO PLAY</b><span>D&nbsp; F&nbsp; J&nbsp; K キーをノーツに合わせて押す</span></div><div class="difficulty"><label for="difficulty">LEVEL</label><select id="difficulty"><option value="normal">NORMAL</option><option value="hard">HARD</option><option value="easy">EASY</option></select></div></div>
+    </section>
+    <section class="tools-row"><div class="upload-card"><div class="upload-icon">♫</div><div class="upload-text"><b>自分の曲で遊ぶ</b><span>音声ファイルから簡易譜面を自動生成</span></div><label class="upload-button" for="audioFile">曲を選ぶ <span>↑</span></label><input id="audioFile" type="file" accept="audio/*" hidden /></div><div class="youtube-card"><div class="yt-icon">▶</div><div class="upload-text"><b>YouTube URL</b><span>動画URLからの譜面生成について</span></div><button id="ytInfo" class="text-button">しくみを見る ↗</button></div></section>
+    <footer><span>NEONBEAT <span class="muted">— MADE FOR THE MOMENT</span></span><span class="muted">BEST SCORE IS SAVED ON THIS DEVICE</span></footer>
+  </main>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
