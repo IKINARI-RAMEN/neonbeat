@@ -4,3 +4,5 @@
 .lane.pressed{background:#ffffff12}.lane.pressed .lane-key{color:#fff}
 .lane.pressed{background:#ffffff12}
 .lane{touch-action:manipulation;cursor:pointer;user-select:none;-webkit-user-select:none}.lane:active{background:#ffffff14}
+/* Keep rapid lane taps from triggering mobile double-tap zoom. */
+.lanes,.lane,.lane-labels,.lane-labels span{touch-action:manipulation}
